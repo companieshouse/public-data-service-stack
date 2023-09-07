@@ -1,5 +1,5 @@
 locals {
-  stack_name     = "public-data-service"
+  stack_name     = "public-data"
   stack_fullname = "${local.stack_name}-stack"
   name_prefix    = "${local.stack_name}-${var.environment}"
 
