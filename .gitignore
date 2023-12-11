@@ -1,5 +1,11 @@
+# Mac OS
+.DS_Store
+
 # Local .terraform directories
 **/.terraform/*
+
+# terraform lock files
+.terraform.lock.hcl
 
 # .tfstate files
 *.tfstate
@@ -32,5 +38,3 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-
-
