@@ -32,7 +32,7 @@ variable "ec2_image_id" {
 
 # Auto-scaling Group
 variable "asg_max_instance_count" {
-  default     = 2
+  default     = 0
   type        = number
   description = "The maximum allowed number of instances in the autoscaling group for the cluster."
 }
@@ -55,12 +55,12 @@ variable "enable_asg_autoscaling" {
   description = "Whether to enable auto-scaling of the ASG by creating a capacity provider for the ECS cluster."
 }
 variable "asg_min_instance_count" {
-  default     = 1
+  default     = 0
   type        = number
   description = "The minimum allowed number of instances in the autoscaling group for the cluster."
 }
 variable "asg_desired_instance_count" {
-  default     = 1
+  default     = 0
   type        = number
   description = "The desired number of instances in the autoscaling group for the cluster. Must fall within the min/max instance count range."
 }
