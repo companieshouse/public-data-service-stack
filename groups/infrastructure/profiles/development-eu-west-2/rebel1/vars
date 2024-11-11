@@ -1,0 +1,7 @@
+environment = "rebel1"
+aws_profile = "development-eu-west-2"
+enable_container_insights = true
+alb_internal = true
+cert_domain = "rebel1.aws.chdev.org"
+
+ec2_key_pair_name = "chs-rebel1"
