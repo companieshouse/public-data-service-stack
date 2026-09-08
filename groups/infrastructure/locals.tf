@@ -16,6 +16,5 @@ locals {
     "web-oauth2-client-secret" = local.stack_secrets["web-oauth2-client-secret"],
     "web-oauth2-cookie-secret" = local.stack_secrets["web-oauth2-cookie-secret"],
     "web-oauth2-request-key"   = local.stack_secrets["web-oauth2-request-key"]
-    "vpc-name"                 = local.stack_secrets["vpc_name"]
   }
 }
