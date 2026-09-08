@@ -77,9 +77,3 @@ variable "enable_container_insights" {
   description = "A boolean value indicating whether to enable Container Insights or not"
   default     = true
 }
-
-variable "enable_asg_autoscaling" {
-  default     = true
-  type        = bool
-  description = "Whether to enable auto-scaling of the ASG by creating a capacity provider for the ECS cluster."
-}
