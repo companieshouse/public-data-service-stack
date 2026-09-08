@@ -39,7 +39,7 @@ module "ecs_cluster" {
 
   scaledown_schedule     = var.asg_scaledown_schedule
   scaleup_schedule       = var.asg_scaleup_schedule
-
+  
   enable_container_insights   = var.enable_container_insights
   notify_topic_slack_endpoint = local.notify_topic_slack_endpoint
 
@@ -58,7 +58,7 @@ module "iac_tags" {
   source = "git@github.com:companieshouse/terraform-modules//aws/tagging/iac?ref=tags/1.0.412"
 
   group           = "infrastructure"
-  source_code_url = "https://github.com/companieshouse/identity-service-stack"
+  source_code_url = "https://github.com/companieshouse/public-data-service-stack"
 }
 
 module "owner_tags" {
