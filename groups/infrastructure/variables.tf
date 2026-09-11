@@ -47,6 +47,12 @@ variable "asg_min_instance_count" {
   description = "The minimum allowed number of instances in the autoscaling group for the cluster."
 }
 
+variable "asg_desired_instance_count" {
+  default     = 0
+  type        = number
+  description = "The desired number of instances in the autoscaling group for the cluster. Must fall within the min/max instance count range."
+}
+
 # Container Insights - ECS
 variable "enable_container_insights" {
   type        = bool
