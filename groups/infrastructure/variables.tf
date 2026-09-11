@@ -41,6 +41,18 @@ variable "asg_max_instance_count" {
   description = "The maximum allowed number of instances in the autoscaling group for the cluster."
 }
 
+variable "asg_scaledown_schedule" {
+  default     = ""
+  type        = string
+  description = "The schedule to use when scaling down the number of EC2 instances to zero."
+}
+
+variable "asg_scaleup_schedule" {
+  default     = ""
+  type        = string
+  description = "The schedule to use when scaling up the number of EC2 instances to their normal desired level."
+}
+
 variable "asg_min_instance_count" {
   default     = 0
   type        = number
